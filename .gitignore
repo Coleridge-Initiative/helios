@@ -1,6 +1,7 @@
 # Folders
 data/
 Documentation/
+*_archives/
 
 # Mac
 .DS_Store

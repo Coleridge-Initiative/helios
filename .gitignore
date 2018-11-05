@@ -6,13 +6,6 @@ Documentation/
 # Mac
 .DS_Store
 
-# Python (jupyter notebook)
+# Python
 .ipynb_checkpoints
-
-# R
-.Rhistory
-.Rapp.history
-.RData
-.Rproj.user/
-.Rproj.user
-*.Rproj
+__pycache__/

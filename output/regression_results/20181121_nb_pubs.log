@@ -1,0 +1,204 @@
+----------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/nj995/dropbox/projects/2018_helios/output/regression_results/20181121_nb_pubs.lo
+> g
+  log type:  text
+ opened on:  21 Nov 2018, 11:21:05
+       panel variable:  person_id (balanced)
+note: period_3 omitted because of collinearity
+note: period_4 omitted because of collinearity
+note: period_5 omitted because of collinearity
+note: int_period_3_x_funder_2 omitted because of collinearity
+note: int_period_3_x_funder_3 omitted because of collinearity
+note: int_period_3_x_funder_4 omitted because of collinearity
+note: int_period_3_x_funder_5 omitted because of collinearity
+note: int_period_4_x_funder_2 omitted because of collinearity
+note: int_period_4_x_funder_3 omitted because of collinearity
+note: int_period_4_x_funder_4 omitted because of collinearity
+note: int_period_4_x_funder_5 omitted because of collinearity
+note: int_period_5_x_funder_2 omitted because of collinearity
+note: int_period_5_x_funder_3 omitted because of collinearity
+note: int_period_5_x_funder_4 omitted because of collinearity
+note: int_period_5_x_funder_5 omitted because of collinearity
+
+Fixed-effects (within) regression               Number of obs     =    132,913
+Group variable: person_id                       Number of groups  =     12,083
+
+R-sq:                                           Obs per group:
+     within  = 0.0436                                         min =         11
+     between = 0.0018                                         avg =       11.0
+     overall = 0.0193                                         max =         11
+
+                                                F(35,12082)       =      80.99
+corr(u_i, Xb)  = 0.0025                         Prob > F          =     0.0000
+
+                                     (Std. Err. adjusted for 12,083 clusters in person_id)
+------------------------------------------------------------------------------------------
+                         |               Robust
+                 nb_pubs |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------------------+----------------------------------------------------------------
+                period_6 |   .7020349   .1146887     6.12   0.000     .4772267    .9268431
+                period_2 |   .0915698   .0951744     0.96   0.336    -.0949873    .2781269
+                period_3 |          0  (omitted)
+                period_4 |          0  (omitted)
+                period_5 |          0  (omitted)
+                period_7 |   1.219477   .1353469     9.01   0.000     .9541751    1.484778
+                period_8 |   1.647384   .1699695     9.69   0.000     1.314216    1.980551
+                period_9 |   2.231105   .1840869    12.12   0.000     1.870265    2.591944
+               period_10 |   2.736919   .2281964    11.99   0.000     2.289617     3.18422
+               period_11 |   2.418314    .219628    11.01   0.000     1.987808     2.84882
+ int_period_2_x_funder_2 |  -.0992284   .1436736    -0.69   0.490    -.3808517    .1823948
+ int_period_2_x_funder_3 |  -.0650177   .1009075    -0.64   0.519    -.2628126    .1327771
+ int_period_2_x_funder_4 |  -.2207013   .1154577    -1.91   0.056    -.4470169    .0056143
+ int_period_2_x_funder_5 |   .0584302   .2106692     0.28   0.782    -.3545152    .4713756
+ int_period_3_x_funder_2 |          0  (omitted)
+ int_period_3_x_funder_3 |          0  (omitted)
+ int_period_3_x_funder_4 |          0  (omitted)
+ int_period_3_x_funder_5 |          0  (omitted)
+ int_period_4_x_funder_2 |          0  (omitted)
+ int_period_4_x_funder_3 |          0  (omitted)
+ int_period_4_x_funder_4 |          0  (omitted)
+ int_period_4_x_funder_5 |          0  (omitted)
+ int_period_5_x_funder_2 |          0  (omitted)
+ int_period_5_x_funder_3 |          0  (omitted)
+ int_period_5_x_funder_4 |          0  (omitted)
+ int_period_5_x_funder_5 |          0  (omitted)
+ int_period_6_x_funder_2 |   1.312188   .6159392     2.13   0.033     .1048487    2.519528
+ int_period_6_x_funder_3 |   .4350676   .1375002     3.16   0.002     .1655451      .70459
+ int_period_6_x_funder_4 |   .6192548   .1459578     4.24   0.000     .3331541    .9053556
+ int_period_6_x_funder_5 |   .3010263    .251282     1.20   0.231    -.1915267    .7935794
+ int_period_7_x_funder_2 |   .8932147   .2213626     4.04   0.000     .4593085    1.327121
+ int_period_7_x_funder_3 |   .6359686   .1912583     3.33   0.001     .2610717    1.010866
+ int_period_7_x_funder_4 |   .7557339   .2544582     2.97   0.003      .256955    1.254513
+ int_period_7_x_funder_5 |   .1182784   .2873143     0.41   0.681    -.4449037    .6814604
+ int_period_8_x_funder_2 |    1.10754   .2710361     4.09   0.000     .5762655    1.638814
+ int_period_8_x_funder_3 |   .4160185   .1826349     2.28   0.023     .0580249    .7740121
+ int_period_8_x_funder_4 |   .6201147   .2119135     2.93   0.003     .2047302    1.035499
+ int_period_8_x_funder_5 |   -.227996   .3269434    -0.70   0.486    -.8688574    .4128655
+ int_period_9_x_funder_2 |   .7962476   .2932516     2.72   0.007     .2214274    1.371068
+ int_period_9_x_funder_3 |   .1986865   .2062592     0.96   0.335    -.2056146    .6029875
+ int_period_9_x_funder_4 |   .5107942   .2300626     2.22   0.026     .0598346    .9617539
+ int_period_9_x_funder_5 |    -.24437   .3587687    -0.68   0.496    -.9476141    .4588742
+int_period_10_x_funder_2 |   .6897772   .3302037     2.09   0.037      .042525     1.33703
+int_period_10_x_funder_3 |  -.0027031   .2433355    -0.01   0.991    -.4796798    .4742735
+int_period_10_x_funder_4 |   .8092577     .32712     2.47   0.013       .16805    1.450465
+int_period_10_x_funder_5 |   .0457345   .8216829     0.06   0.956    -1.564896    1.656365
+int_period_11_x_funder_2 |    1.25127   .3425907     3.65   0.000     .5797375    1.922803
+int_period_11_x_funder_3 |   .3042832   .2327568     1.31   0.191    -.1519575    .7605238
+int_period_11_x_funder_4 |   1.079256   .2709658     3.98   0.000     .5481192    1.610392
+int_period_11_x_funder_5 |  -.2315793   .4106437    -0.56   0.573    -1.036507    .5733483
+                   _cons |   4.948564   .0250779   197.33   0.000     4.899407    4.997721
+-------------------------+----------------------------------------------------------------
+                 sigma_u |  6.6839499
+                 sigma_e |  5.9159954
+                     rho |  .56072346   (fraction of variance due to u_i)
+------------------------------------------------------------------------------------------
+(est1 stored)
+
+added macro:
+             e(YearFE) : "Yes"
+
+added macro:
+      e(AffiliationFE) : "Yes"
+
+added macro:
+       e(ResearcherFE) : "Yes"
+       panel variable:  person_id (balanced)
+note: period_3 omitted because of collinearity
+note: period_4 omitted because of collinearity
+note: period_5 omitted because of collinearity
+note: int_period_3_x_funder_2 omitted because of collinearity
+note: int_period_3_x_funder_3 omitted because of collinearity
+note: int_period_3_x_funder_4 omitted because of collinearity
+note: int_period_3_x_funder_5 omitted because of collinearity
+note: int_period_4_x_funder_2 omitted because of collinearity
+note: int_period_4_x_funder_3 omitted because of collinearity
+note: int_period_4_x_funder_4 omitted because of collinearity
+note: int_period_4_x_funder_5 omitted because of collinearity
+note: int_period_5_x_funder_2 omitted because of collinearity
+note: int_period_5_x_funder_3 omitted because of collinearity
+note: int_period_5_x_funder_4 omitted because of collinearity
+note: int_period_5_x_funder_5 omitted because of collinearity
+
+Fixed-effects (within) regression               Number of obs     =    126,544
+Group variable: person_id                       Number of groups  =     11,504
+
+R-sq:                                           Obs per group:
+     within  = 0.0585                                         min =         11
+     between = 0.0023                                         avg =       11.0
+     overall = 0.0192                                         max =         11
+
+                                                F(35,11503)       =      28.21
+corr(u_i, Xb)  = 0.0031                         Prob > F          =     0.0000
+
+                                     (Std. Err. adjusted for 11,504 clusters in person_id)
+------------------------------------------------------------------------------------------
+                         |               Robust
+                 nb_pubs |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------------------+----------------------------------------------------------------
+                period_6 |    .952934    .287126     3.32   0.001     .3901182     1.51575
+                period_2 |  -.0436826   .2492306    -0.18   0.861    -.5322169    .4448518
+                period_3 |          0  (omitted)
+                period_4 |          0  (omitted)
+                period_5 |          0  (omitted)
+                period_7 |   1.245331   .2509674     4.96   0.000      .753392     1.73727
+                period_8 |    1.57028   .3355242     4.68   0.000     .9125955    2.227965
+                period_9 |   2.219399    .356581     6.22   0.000     1.520439    2.918358
+               period_10 |     2.4378   .5120597     4.76   0.000     1.434076    3.441524
+               period_11 |   2.527789   .4935366     5.12   0.000     1.560373    3.495204
+ int_period_2_x_funder_2 |   .0360239   .2714775     0.13   0.894    -.4961181     .568166
+ int_period_2_x_funder_3 |   .1418454   .2608902     0.54   0.587    -.3695437    .6532345
+ int_period_2_x_funder_4 |   .1382767   .2974038     0.46   0.642    -.4446854    .7212389
+ int_period_2_x_funder_5 |  -.2497057   .5342966    -0.47   0.640    -1.297018    .7976066
+ int_period_3_x_funder_2 |          0  (omitted)
+ int_period_3_x_funder_3 |          0  (omitted)
+ int_period_3_x_funder_4 |          0  (omitted)
+ int_period_3_x_funder_5 |          0  (omitted)
+ int_period_4_x_funder_2 |          0  (omitted)
+ int_period_4_x_funder_3 |          0  (omitted)
+ int_period_4_x_funder_4 |          0  (omitted)
+ int_period_4_x_funder_5 |          0  (omitted)
+ int_period_5_x_funder_2 |          0  (omitted)
+ int_period_5_x_funder_3 |          0  (omitted)
+ int_period_5_x_funder_4 |          0  (omitted)
+ int_period_5_x_funder_5 |          0  (omitted)
+ int_period_6_x_funder_2 |   1.061289   .6698323     1.58   0.113    -.2516962    2.374275
+ int_period_6_x_funder_3 |   .2303233   .3041609     0.76   0.449     -.365884    .8265305
+ int_period_6_x_funder_4 |   .1382956    .368362     0.38   0.707    -.5837566    .8603477
+ int_period_6_x_funder_5 |  -.2157825   .4695023    -0.46   0.646    -1.136087     .704522
+ int_period_7_x_funder_2 |   .8673606   .3060519     2.83   0.005     .2674468    1.467275
+ int_period_7_x_funder_3 |   .6255433   .3398659     1.84   0.066    -.0406518    1.291738
+ int_period_7_x_funder_4 |   .3660465   .3475498     1.05   0.292    -.3152102    1.047303
+ int_period_7_x_funder_5 |  -.7986581   .7766051    -1.03   0.304    -2.320936      .72362
+ int_period_8_x_funder_2 |   1.184643   .3964192     2.99   0.003     .4075942    1.961692
+ int_period_8_x_funder_3 |   .4990583   .3566927     1.40   0.162    -.2001202    1.198237
+ int_period_8_x_funder_4 |   1.043984   .4358951     2.40   0.017     .1895554    1.898413
+ int_period_8_x_funder_5 |  -.6956636   .5033446    -1.38   0.167    -1.682305    .2909775
+ int_period_9_x_funder_2 |   .8079534   .4233904     1.91   0.056     -.021964    1.637871
+ int_period_9_x_funder_3 |    .299028   .3934536     0.76   0.447     -.472208    1.070264
+ int_period_9_x_funder_4 |   .4518678   .4535404     1.00   0.319    -.4371487    1.340884
+ int_period_9_x_funder_5 |  -1.257707   .9223543    -1.36   0.173    -3.065678    .5502648
+int_period_10_x_funder_2 |   .9888959   .5649487     1.75   0.080    -.1184997    2.096292
+int_period_10_x_funder_3 |    .371982   .5317268     0.70   0.484     -.670293    1.414257
+int_period_10_x_funder_4 |   .9601741   .6215584     1.54   0.122    -.2581863    2.178534
+int_period_10_x_funder_5 |  -.1151127   1.830826    -0.06   0.950    -3.703843    3.473618
+int_period_11_x_funder_2 |   1.141795   .5592061     2.04   0.041     .0456562    2.237935
+int_period_11_x_funder_3 |   .2894922    .515639     0.56   0.575     -.721248    1.300232
+int_period_11_x_funder_4 |   .6579352    .614888     1.07   0.285      -.54735     1.86322
+int_period_11_x_funder_5 |  -1.443081   1.402897    -1.03   0.304    -4.192997    1.306836
+                   _cons |   4.729047   .1006508    46.98   0.000     4.531755     4.92634
+-------------------------+----------------------------------------------------------------
+                 sigma_u |   6.708991
+                 sigma_e |   5.035371
+                     rho |  .63966783   (fraction of variance due to u_i)
+------------------------------------------------------------------------------------------
+(est2 stored)
+
+added macro:
+             e(YearFE) : "Yes"
+
+added macro:
+      e(AffiliationFE) : "Yes"
+
+added macro:
+       e(ResearcherFE) : "Yes"

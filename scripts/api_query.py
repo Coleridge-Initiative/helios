@@ -60,7 +60,7 @@ def pull_data(string, in_list, in_type, return_type, max_in_items, max_return, m
             if max_return*(j+1)>max_overall_returns:
                 loop = False
 
-            time.sleep(2)
+            time.sleep(3)
 
         count = resp['_stats']['total_count']
         if resp['_stats']['total_count']>=max_overall_returns:

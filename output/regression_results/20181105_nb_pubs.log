@@ -1,0 +1,209 @@
+----------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/nj995/dropbox/projects/2018_helios/output/regression_results/20181105_nb_pubs.lo
+> g
+  log type:  text
+ opened on:   5 Nov 2018, 14:42:01
+
+      Source |       SS           df       MS      Number of obs   =    94,842
+-------------+----------------------------------   F(14, 94827)    =    133.08
+       Model |  128069.448        14  9147.81772   Prob > F        =    0.0000
+    Residual |  6518421.71    94,827  68.7401448   R-squared       =    0.0193
+-------------+----------------------------------   Adj R-squared   =    0.0191
+       Total |  6646491.16    94,841  70.0803572   Root MSE        =     8.291
+
+---------------------------------------------------------------------------------------------------
+                      nb_pubs_res |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+----------------------------------+----------------------------------------------------------------
+                      1.post_flag |   1.726929   .1992297     8.67   0.000     1.336441    2.117417
+                                  |
+                        funder_id |
+                INCa/INSERM/DGOS  |    .393845   .2165667     1.82   0.069    -.0306234    .8183134
+       National Cancer Institute  |    .461386   .1550437     2.98   0.003      .157502    .7652701
+National Health and Medical Rese  |  -.0039015    .182657    -0.02   0.983    -.3619073    .3541042
+                  Wellcome Trust  |  -.6779735   .3005323    -2.26   0.024    -1.267013   -.0889336
+                                  |
+              post_flag#funder_id |
+              1#INCa/INSERM/DGOS  |   1.326575   .2928661     4.53   0.000     .7525604    1.900589
+     1#National Cancer Institute  |   .4185519   .2094145     2.00   0.046     .0081019     .829002
+                               1 #|
+National Health and Medical Rese  |   .9373425   .2469782     3.80   0.000     .4532679    1.421417
+                1#Wellcome Trust  |  -.0589358   .4063116    -0.15   0.885     -.855302    .7374304
+                                  |
+                       start_year |
+                            2008  |  -.0151073   .0879113    -0.17   0.864    -.1874125    .1571979
+                            2009  |  -.0375249   .0858105    -0.44   0.662    -.2057125    .1306627
+                            2010  |  -.0279646   .0931977    -0.30   0.764    -.2106311     .154702
+                            2011  |  -.0086771   .0930068    -0.09   0.926    -.1909693    .1736151
+                            2012  |  -.0355994   .0950972    -0.37   0.708    -.2219888      .15079
+                                  |
+                            _cons |  -1.530166   .1539679    -9.94   0.000    -1.831942   -1.228391
+---------------------------------------------------------------------------------------------------
+(est1 stored)
+
+added macro:
+          e(CountryFE) : "No"
+
+added macro:
+      e(AffiliationFE) : "No"
+
+added macro:
+       e(ResearcherFE) : "No"
+
+      Source |       SS           df       MS      Number of obs   =    94,842
+-------------+----------------------------------   F(15, 94826)    =    603.38
+       Model |  579104.832        15  38606.9888   Prob > F        =    0.0000
+    Residual |  6067386.32    94,826   63.984417   R-squared       =    0.0871
+-------------+----------------------------------   Adj R-squared   =    0.0870
+       Total |  6646491.16    94,841  70.0803572   Root MSE        =     7.999
+
+---------------------------------------------------------------------------------------------------
+                      nb_pubs_res |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+----------------------------------+----------------------------------------------------------------
+                      1.post_flag |   .4792492    .192788     2.49   0.013     .1013868    .8571116
+                                  |
+                        funder_id |
+                INCa/INSERM/DGOS  |   .6126906   .2089572     2.93   0.003     .2031367    1.022245
+       National Cancer Institute  |   .5538819   .1495884     3.70   0.000     .2606903    .8470736
+National Health and Medical Rese  |    .049943   .1762264     0.28   0.777    -.2954589    .3953449
+                  Wellcome Trust  |   .1754461    .290128     0.60   0.545    -.3932017    .7440938
+                                  |
+              post_flag#funder_id |
+              1#INCa/INSERM/DGOS  |   1.326575   .2825537     4.69   0.000     .7727726    1.880377
+     1#National Cancer Institute  |   .4185519   .2020406     2.07   0.038     .0225547    .8145492
+                               1 #|
+National Health and Medical Rese  |   .9373425   .2382816     3.93   0.000     .4703132    1.404372
+                1#Wellcome Trust  |  -.0589358   .3920045    -0.15   0.880    -.8272603    .7093888
+                                  |
+                   rsr_career_age |   .2268509   .0027019    83.96   0.000     .2215552    .2321466
+                                  |
+                       start_year |
+                            2008  |   .1197749    .084831     1.41   0.158    -.0464929    .2860427
+                            2009  |  -.1971737   .0828108    -2.38   0.017    -.3594819   -.0348655
+                            2010  |   .0290896   .0899186     0.32   0.746    -.1471499    .2053291
+                            2011  |   .0305746    .089733     0.34   0.733    -.1453011    .2064503
+                            2012  |   .1756887   .0917831     1.91   0.056    -.0042052    .3555827
+                                  |
+                            _cons |   -4.04556   .1515375   -26.70   0.000    -4.342572   -3.748548
+---------------------------------------------------------------------------------------------------
+(est2 stored)
+
+added macro:
+          e(CountryFE) : "No"
+
+added macro:
+      e(AffiliationFE) : "No"
+
+added macro:
+       e(ResearcherFE) : "No"
+       panel variable:  rsr_affiliation_id (unbalanced)
+
+Fixed-effects (within) regression               Number of obs     =     94,842
+Group variable: rsr_affili~d                    Number of groups  =      3,054
+
+R-sq:                                           Obs per group:
+     within  = 0.0788                                         min =         11
+     between = 0.0995                                         avg =       31.1
+     overall = 0.0845                                         max =      1,463
+
+                                                F(15,3053)        =     115.69
+corr(u_i, Xb)  = -0.0147                        Prob > F          =     0.0000
+
+                                      (Std. Err. adjusted for 3,054 clusters in rsr_affiliation_id)
+---------------------------------------------------------------------------------------------------
+                                  |               Robust
+                      nb_pubs_res |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+----------------------------------+----------------------------------------------------------------
+                      1.post_flag |   .4827026   .1892552     2.55   0.011     .1116221    .8537831
+                                  |
+                        funder_id |
+                INCa/INSERM/DGOS  |  -.8661357   .9728746    -0.89   0.373    -2.773691     1.04142
+       National Cancer Institute  |    .783266   .4582299     1.71   0.087    -.1152043    1.681736
+National Health and Medical Rese  |   .3336663   .7227689     0.46   0.644    -1.083496    1.750829
+                  Wellcome Trust  |   -.096036   .4715327    -0.20   0.839     -1.02059    .8285178
+                                  |
+              post_flag#funder_id |
+              1#INCa/INSERM/DGOS  |   1.326575   .3518665     3.77   0.000     .6366557    2.016494
+     1#National Cancer Institute  |   .4185519   .1987917     2.11   0.035     .0287728     .808331
+                               1 #|
+National Health and Medical Rese  |   .9373425   .2339876     4.01   0.000     .4785534    1.396132
+                1#Wellcome Trust  |  -.0589358   .3525796    -0.17   0.867    -.7502531    .6323816
+                                  |
+                   rsr_career_age |    .226223   .0099625    22.71   0.000     .2066892    .2457568
+                                  |
+                       start_year |
+                            2008  |   .1512208   .2567094     0.59   0.556    -.3521199    .6545614
+                            2009  |   -.067793    .256147    -0.26   0.791     -.570031    .4344449
+                            2010  |  -.0228717   .3054649    -0.07   0.940    -.6218094     .576066
+                            2011  |   .1805895   .3000762     0.60   0.547    -.4077822    .7689613
+                            2012  |   .3011198    .242901     1.24   0.215    -.1751463    .7773858
+                                  |
+                            _cons |   -4.20113   .4323371    -9.72   0.000    -5.048831   -3.353429
+----------------------------------+----------------------------------------------------------------
+                          sigma_u |  5.8125581
+                          sigma_e |  7.1456643
+                              rho |  .39820018   (fraction of variance due to u_i)
+---------------------------------------------------------------------------------------------------
+(est3 stored)
+
+added macro:
+          e(CountryFE) : "No"
+
+added macro:
+      e(AffiliationFE) : "Yes"
+
+added macro:
+       e(ResearcherFE) : "No"
+       panel variable:  person_id (balanced)
+note: 2.funder_id omitted because of collinearity
+note: 3.funder_id omitted because of collinearity
+note: 4.funder_id omitted because of collinearity
+note: 5.funder_id omitted because of collinearity
+
+Fixed-effects (within) regression               Number of obs     =     94,842
+Group variable: person_id                       Number of groups  =      8,622
+
+R-sq:                                           Obs per group:
+     within  = 0.0441                                         min =         11
+     between = 0.0007                                         avg =       11.0
+     overall = 0.0184                                         max =         11
+
+                                                F(5,8621)         =     377.78
+corr(u_i, Xb)  = 0.0001                         Prob > F          =     0.0000
+
+                                               (Std. Err. adjusted for 8,622 clusters in person_id)
+---------------------------------------------------------------------------------------------------
+                                  |               Robust
+                      nb_pubs_res |      Coef.   Std. Err.      t    P>|t|     [95% Conf. Interval]
+----------------------------------+----------------------------------------------------------------
+                      1.post_flag |   1.726929   .1643934    10.50   0.000     1.404679    2.049179
+                                  |
+                        funder_id |
+                INCa/INSERM/DGOS  |          0  (omitted)
+       National Cancer Institute  |          0  (omitted)
+National Health and Medical Rese  |          0  (omitted)
+                  Wellcome Trust  |          0  (omitted)
+                                  |
+              post_flag#funder_id |
+              1#INCa/INSERM/DGOS  |   1.326575   .3190748     4.16   0.000     .7011119    1.952038
+     1#National Cancer Institute  |   .4185519   .1757515     2.38   0.017      .074037    .7630669
+                               1 #|
+National Health and Medical Rese  |   .9373425   .2086763     4.49   0.000     .5282871    1.346398
+                1#Wellcome Trust  |  -.0589358   .3346132    -0.18   0.860    -.7148577    .5969862
+                                  |
+                            _cons |  -1.217625   .0283991   -42.88   0.000    -1.273294   -1.161956
+----------------------------------+----------------------------------------------------------------
+                          sigma_u |  6.4402329
+                          sigma_e |  5.4817849
+                              rho |  .57987685   (fraction of variance due to u_i)
+---------------------------------------------------------------------------------------------------
+(est4 stored)
+
+added macro:
+          e(CountryFE) : "No"
+
+added macro:
+      e(AffiliationFE) : "No"
+
+added macro:
+       e(ResearcherFE) : "Yes"

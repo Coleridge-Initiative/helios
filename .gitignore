@@ -2,6 +2,9 @@
 data/
 Documentation/
 *_archives/
+output/researcher_info/
+Project Development Documents/
+scripts/temporary_scripts/
 
 # Mac
 .DS_Store
@@ -9,3 +12,8 @@ Documentation/
 # Python
 .ipynb_checkpoints
 __pycache__/
+
+# Files
+*.csv
+*.log
+*.gph
